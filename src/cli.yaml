@@ -1,32 +1,33 @@
 name: ceasar-eyes
 
-settings: -ArgRequiredElseHelp
+settings:
+  - ArgRequiredElseHelp
 
 args:
   - input:
-    help: Text to (de)cipher
-    short: t
-    index: 1
-    takes_value: true
+      help: Text to (de)cipher
+      short: t
+      index: 1
+      takes_value: true
 
   - file:
-    help: Read [input] as a file
-    short: f
-    long: file
-    takes_value: true
+      help: Read [input] as a file
+      short: f
+      long: file
+      takes_value: true
 
   - stdin:
-    help: Read input from "stdin"
-    long: stdin
-    conflicts_with:
-      - input
-      - file
+      help: Read input from "stdin"
+      long: stdin
+      conflicts_with:
+        - input
+        - file
 
   - output:
-    help: Define an output file
-    short: 0
-    long: output
-    takes_value: true
+      help: Define an output file
+      short: o
+      long: output
+      takes_value: true
 
   - cipher:
       help: Cipher input with the given rotation(s) - using equals when declaring the flag is required
@@ -37,7 +38,6 @@ args:
       use_delimiter: true
       # require_equals: true
 
-
   - decipher:
       help: Decipher input with the given rotation(s) - using equals when declaring the flag is required
       short: d
@@ -47,10 +47,10 @@ args:
       use_delimiter: true
       # require_equals: true
 
-  -brutef:
-    help: Brute force all possible rotations
-    short: b
-    long: brutef
+  - brutef:
+      help: Brute force all possible rotations
+      short: b
+      long: brutef
 
 groups:
   - actions:
