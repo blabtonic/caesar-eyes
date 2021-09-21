@@ -43,7 +43,7 @@ fn decipher(text: &str, rotation: u8) -> String {
 pub fn decipher_n(text: &str, rotations: &[u8]) -> Vec<String> {
     let mut res = Vec::new();
     for &r in rotations {
-        res.push(text, r)
+        res.push(decipher(text, r))
     }
     res
 }
