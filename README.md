@@ -33,7 +33,7 @@ kcna ja klfansa
 ### Help
 
 ```bash
-$ rot --help
+$ caesar-eyes --help
 caesar-eyes 0.1.0
 USAGE:
     caesar-eyes [FLAGS] [OPTIONS] [--] [input]
