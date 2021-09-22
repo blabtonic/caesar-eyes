@@ -1,5 +1,5 @@
 # used to create cli help interface
-name: ceasar-eyes
+name: caesar-eyes
 
 settings:
   - ArgRequiredElseHelp
